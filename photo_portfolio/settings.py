@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'gallery_app.apps.GalleryAppConfig',
     'sendemail.apps.SendemailConfig',
     'shopping_app.apps.ShoppingAppConfig',
+    'blog_app.apps.BlogAppConfig',
     'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -59,6 +60,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        # 'DIRS': ['photo_portfolio/templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -129,7 +131,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USER = 'jonicdao@gmail.com'
-EMAIL_PASS = 'MaElenaPerlas$'
+EMAIL_PASS = '******'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
