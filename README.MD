@@ -1,1 +1,1 @@
-Personal photography portfolio website made with Bootstrap 4 and Django
+Personal photography portfolio website made with Bootstrap 4 and Django. The main feature of this site is a blog which users can interact with the site author. There is also a contact form that uses Django forms sent through email. Todo: selling app to sell images. Instagram api link to main page (right now, there's something still broken). 
