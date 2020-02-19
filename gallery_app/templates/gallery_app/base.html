@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,17 +11,43 @@
     <title>Contact Me</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-8">
-                <h1 class="mt-2">Contact Me</h1>
-                <hr class="mt-0 mb-4">
-                {% block content %}
-                {% endblock %}
-            </div>
-        </div>
+
+ <div class="container">
+    <div class="header">
+      <div class="jumbotron">
+          <h1 class="display-20">Jose Nicdao Photography</h1>
+          <h2 class="display-400">offering you exceptional images and lasting memories</h2>
+      </div>
+      <div class="navbar">
+          <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link active" href="/">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/blog">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/sendemail">CONTACT</a>
+              </li>
+            </ul>
+      </div>
+    </div>
+          {% block content %}
+
+
+          {% endblock %}
+
+    <div class="navbar justify-content-right">
+      <ul class="nav justify-content-center">
+        <li class="nav-item"><a class="nav-link" href="#">Media links</a>
+        <li class="nav-item"><a class="nav-link" href="#">back to top</a>
+      </ul>
     </div>
 
+  </div>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

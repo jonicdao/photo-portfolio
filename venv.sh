@@ -1,0 +1,1 @@
+source /Users/jojonicdao/Documents/Coding_Dojo/Python/my_environments/django3Py4Env/bin/activate

@@ -14,8 +14,7 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-
+print("BASE_DIR = ", BASE_DIR)
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
@@ -31,17 +30,16 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'blog_app.apps.BlogAppConfig',
     'gallery_app.apps.GalleryAppConfig',
     'sendemail.apps.SendemailConfig',
-    'shopping_app.apps.ShoppingAppConfig',
-    'blog_app.apps.BlogAppConfig',
+    'django_instagram',
     'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
 ]
 
 MIDDLEWARE = [
@@ -59,8 +57,7 @@ ROOT_URLCONF = 'photo_portfolio.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
-        # 'DIRS': ['photo_portfolio/templates/'],
+        'DIRS': [os.path.join(BASE_DIR, '/templates/')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -123,7 +120,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-STATIC_URL = '/static/'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 CRISPY_TEMPLATE_PACK = 'boostrap4'
 

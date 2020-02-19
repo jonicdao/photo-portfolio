@@ -13,11 +13,12 @@ def about(request):
 def blog(request):
     return render(request, "gallery_app/blog.html")
 
-def portfolio(request):
-    return render(request, "gallery_app/portfolio.html")
-
 def contact(request):
-    return render(request, "gallery_app/contact.html")
+    return render(request, "sendemail/email.html")
+
+# This buys you something. Connects to the shopping app. update on urls of the project
+#def buy(request):
+ #   return render(request, "shopping_app/shopping.html")
 
 class PersonCreateView(CreateView):
     model = Person
