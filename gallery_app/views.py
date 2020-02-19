@@ -16,6 +16,13 @@ def blog(request):
 def contact(request):
     return render(request, "sendemail/email.html")
 
+def landscape(request):
+    return render(request, "gallery_app/landscape.html")
+def wedding(request):
+    return render(request, "gallery_app/wedding.html")
+def portrait(request):
+    return render(request, "gallery_app/portrait.html")
+
 # This buys you something. Connects to the shopping app. update on urls of the project
 #def buy(request):
  #   return render(request, "shopping_app/shopping.html")
