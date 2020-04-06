@@ -7,9 +7,6 @@ from .models import Person
 def index(request):
     return render(request, "gallery_app/index.html")
 
-def about(request):
-    return render(request, "gallery_app/about.html")
-
 def blog(request):
     return render(request, "gallery_app/blog.html")
 
