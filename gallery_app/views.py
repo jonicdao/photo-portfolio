@@ -4,7 +4,7 @@ from django.shortcuts import render
 from .models import Person
  
 
-def index(request):
+def gallery(request):
     return render(request, "gallery_app/index.html")
 
 def blog(request):
