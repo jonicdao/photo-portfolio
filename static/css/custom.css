@@ -355,6 +355,7 @@ body {
     font-family: 'Lato', sans-serif;
     margin: 0;
   }
+
 p {
   font-family: 'Lato', sans-serif;
 
@@ -398,20 +399,59 @@ h1 {
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
+
 h2 {
   font-family: 'Roboto', sans-serif;
   text-align: center;
+  color: black;
 }
+
+ul {
+  color: black;
+}
+.lead {
+  text-align: center;
+}
+
 header {
     padding: 156px 0 100px;
   }
   
 section {
     padding: 150px 0;
+    background-color: rgba(255,245,236,1);
   }
+
+#portfolio{
+  background-color: rgb(31, 46, 60);
+  color: white;
+}
+
+#portfolio h2 {
+  color: white;
+}
+#portfolio p {
+  color: black;
+}
+
+#services {
+  background-color: #f1cac3;
+}
   
+#services h2 {
+  color: black;
+}
+
 #investment {
-  background-color: salmon;
+  background-color: #f1cac3;
+}
+
+#investment h2 {
+  color: black;
+}
+
+#contact h2 {
+  color: black;
 }
 
 @media screen and (min-width: 601px) {
@@ -436,4 +476,8 @@ section {
   .lead {
     font-size: 12px;
   }
+}
+
+#instagram {
+  background-color: blanchedalmond;
 }
