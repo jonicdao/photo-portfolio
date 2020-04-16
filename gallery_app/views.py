@@ -13,10 +13,12 @@ def blog(request):
 def contact(request):
     return render(request, "sendemail/email.html")
 
-def landscape(request):
-    return render(request, "gallery_app/landscape.html")
 def wedding(request):
     return render(request, "gallery_app/wedding.html")
+
+def featured(request):
+    return render(request, "gallery_app/featured.html")
+
 def portrait(request):
     return render(request, "gallery_app/portrait.html")
 

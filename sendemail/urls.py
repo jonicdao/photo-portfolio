@@ -6,4 +6,5 @@ from .views import emailView, successView
 urlpatterns = [
     path('', emailView, name='email'),
     path('success/', successView, name='success'),
+
 ]
